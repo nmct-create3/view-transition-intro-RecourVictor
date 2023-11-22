@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="view-transition" content="same-origin" />
     <title>Index</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,18 @@
 <body>
     <nav class="nav">
         <ul class="nav__list list-reset">
-            <li class="nav__item nav__item--one"><a href="one/" class="nav__link nav__link--one">Page 1</a></li>
-            <li class="nav__item nav__item--two"><a href="two/" class="nav__link nav__link--two">Page 2</a></li>
-            <li class="nav__item nav__item--three"><a href="three/" class="nav__link nav__link--three">Page 3</a></li>
-            <li class="nav__item nav__item--four"><a href="four/" class="nav__link nav__link--four">Page 4</a></li>
+            <li class="nav__item nav__item--one"><a href="one/" class="nav__link nav__link--one" style="view-transition-name: page1;">
+                    <span style="view-transition-name: text1;">One</span>
+                </a></li>
+            <li class="nav__item nav__item--two"><a href="two/" class="nav__link nav__link--two" style="view-transition-name: page2;">
+                    <span style="view-transition-name: text2;">Two</span>
+                </a></li>
+            <li class="nav__item nav__item--three"><a href="three/" class="nav__link nav__link--three" style="view-transition-name: page3;">
+                    <span style="view-transition-name: text3;">Three</span>
+                </a></li>
+            <li class="nav__item nav__item--four"><a href="four/" class="nav__link nav__link--four" style="view-transition-name: page4;">
+                    <span style="view-transition-name: text4;">Four</span>
+                </a></li>
         </ul>
     </nav>
 </body>
